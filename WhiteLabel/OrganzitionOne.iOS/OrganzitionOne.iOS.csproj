@@ -89,6 +89,7 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="iOSInitializer.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
@@ -162,6 +163,10 @@
     <ProjectReference Include="..\AppBase\AppBase.Core.csproj">
       <Project>{bf261960-5b97-4711-befc-0058c9b87064}</Project>
       <Name>AppBase.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OrganizationOne.Core\OrganizationOne.Core.csproj">
+      <Project>{901C53A2-70F4-4C3F-8ADC-23A1C7DD1963}</Project>
+      <Name>OrganizationOne.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

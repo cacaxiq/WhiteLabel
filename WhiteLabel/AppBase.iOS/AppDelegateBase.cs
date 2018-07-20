@@ -1,9 +1,10 @@
-﻿using Foundation;
+﻿using AppBase.Core;
+using Foundation;
 using UIKit;
 
 namespace AppBase.iOS
 {
-    public class AppDelegateBase : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
+    public abstract class AppDelegateBase : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
     {
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
@@ -15,9 +16,11 @@ namespace AppBase.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new Core.ApplicationBase(new iOSInitializer()));
+            LoadApplication(LoadCustomApplication());
 
             return base.FinishedLaunching(app, options);
         }
+
+        public abstract ApplicationBase LoadCustomApplication();
     }
 }

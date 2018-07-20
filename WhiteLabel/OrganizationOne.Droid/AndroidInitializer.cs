@@ -8,9 +8,6 @@ namespace OrganizationOne.Droid
     {
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterForNavigation<MainPage>();
-            containerRegistry.RegisterForNavigation<MainPageDetail>();
-            containerRegistry.RegisterForNavigation<MainPageMaster>();
         }
     }
 }

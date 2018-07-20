@@ -1,5 +1,6 @@
 ﻿using AppBase.iOS;
 using Foundation;
+using OrganizationOne.Core;
 
 namespace OrganzitionOne.iOS
 {
@@ -7,5 +8,11 @@ namespace OrganzitionOne.iOS
     // User Interface of the application, as well as listening (and optionally responding) to 
     // application events from iOS.
     [Register("AppDelegate")]
-    public partial class AppDelegate : AppDelegateBase { }
+    public partial class AppDelegate : AppDelegateBase
+    {
+        public override AppBase.Core.ApplicationBase LoadCustomApplication()
+        {
+            return new App(new iOSInitializer());
+        }
+    }
 }
