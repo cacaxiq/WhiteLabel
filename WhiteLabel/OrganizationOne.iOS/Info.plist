@@ -23,9 +23,9 @@
 	<key>MinimumOSVersion</key>
 	<string>8.0</string>
 	<key>CFBundleDisplayName</key>
-	<string>OrganzitionOne.iOS</string>
+	<string>OrganizationOne.iOS</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.companyname.OrganzitionOne.iOS.iOS</string>
+	<string>com.companyname.OrganizationOne.iOS</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>UILaunchStoryboardName</key>

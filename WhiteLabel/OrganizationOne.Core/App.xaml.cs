@@ -1,4 +1,5 @@
 ﻿using AppBase.Core;
+using OrganizationOne.Core.ViewModel;
 using Prism;
 using Prism.Ioc;
 using Xamarin.Forms.Xaml;
@@ -14,6 +15,8 @@ namespace OrganizationOne.Core
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             base.RegisterTypes(containerRegistry);
+
+            containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>("LoginPage");
         }
     }
 }

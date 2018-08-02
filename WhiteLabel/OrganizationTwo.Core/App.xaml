@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:ApplicationBase
+    x:Class="OrganizationTwo.Core.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:AppBase.Core;assembly=AppBase.Core">
+    <base:ApplicationBase.Resources>
+        <ResourceDictionary>
+            <Style x:Key="LoginStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="Blue" />
+            </Style>
+            <Style x:Key="SenhaStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="Blue" />
+            </Style>
+        </ResourceDictionary>
+    </base:ApplicationBase.Resources>
+</base:ApplicationBase>

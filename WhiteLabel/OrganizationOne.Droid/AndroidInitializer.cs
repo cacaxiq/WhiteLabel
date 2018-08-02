@@ -1,5 +1,4 @@
-﻿using OrganizationOne.Core;
-using Prism;
+﻿using Prism;
 using Prism.Ioc;
 
 namespace OrganizationOne.Droid

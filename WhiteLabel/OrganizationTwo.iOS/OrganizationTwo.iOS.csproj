@@ -5,13 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B44503C0-75D7-409F-BFB1-91F8506E5ED9}</ProjectGuid>
+    <ProjectGuid>{7EF8A050-2A3B-4116-B745-D2F637239576}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>OrganzitionOne.iOS</RootNamespace>
+    <RootNamespace>OrganizationTwo.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>OrganzitionOne.iOS</AssemblyName>
+    <AssemblyName>OrganizationTwo.iOS</AssemblyName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -88,6 +88,9 @@
     <CodesignKey>iPhone Distribution</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <AppExtensionDebugBundleId />
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="iOSInitializer.cs" />
     <Compile Include="Main.cs" />
@@ -151,22 +154,22 @@
     <PackageReference Include="Prism.Forms">
       <Version>7.1.0.172-pre</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="3.1.0.637273" />
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppBase.iOS\AppBase.iOS.csproj">
-      <Project>{e71f3053-056c-4381-9638-048ed73bdff6}</Project>
+      <Project>{E71F3053-056C-4381-9638-048ED73BDFF6}</Project>
       <Name>AppBase.iOS</Name>
       <IsAppExtension>false</IsAppExtension>
       <IsWatchApp>false</IsWatchApp>
     </ProjectReference>
     <ProjectReference Include="..\AppBase\AppBase.Core.csproj">
-      <Project>{bf261960-5b97-4711-befc-0058c9b87064}</Project>
+      <Project>{BF261960-5B97-4711-BEFC-0058C9B87064}</Project>
       <Name>AppBase.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\OrganizationOne.Core\OrganizationOne.Core.csproj">
-      <Project>{901C53A2-70F4-4C3F-8ADC-23A1C7DD1963}</Project>
-      <Name>OrganizationOne.Core</Name>
+    <ProjectReference Include="..\OrganizationTwo.Core\OrganizationTwo.Core.csproj">
+      <Project>{176f89b4-0bb3-40c1-a1f4-cca3198eb311}</Project>
+      <Name>OrganizationTwo.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

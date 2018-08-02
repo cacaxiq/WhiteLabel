@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppBase.Core.LoginPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Padding="16">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Image Source="icon.png" />
+
+            <Label Style="{StaticResource LoginStyle}" Text="Login:" />
+            <Entry />
+            <Label Style="{StaticResource SenhaStyle}" Text="Senha:" />
+            <Entry />
+            <Button Text="Login" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

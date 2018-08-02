@@ -3,7 +3,7 @@ using Android.Content.PM;
 using AppBase.Droid;
 using OrganizationOne.Core;
 
-namespace Organization.Droid.Droid
+namespace OrganizationOne.Droid
 {
     [Activity(Label = "Organization.Droid", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : MainActivityBase
