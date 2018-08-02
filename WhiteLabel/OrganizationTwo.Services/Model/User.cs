@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using AppBase.Services.Model;
+using System;
 
 namespace OrganizationTwo.Services.Model
 {
-    public class User
+    public class User : IModelBase
     {
         public string UserName { get; set; }
         public Guid Id { get; set; }

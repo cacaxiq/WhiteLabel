@@ -9,7 +9,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AppBase.Services\AppBase.Services.csproj" />
     <ProjectReference Include="..\AppBase\AppBase.Core.csproj" />
+    <ProjectReference Include="..\OrganizationOne.Services\OrganizationOne.Services.csproj" />
   </ItemGroup>
 
   <ItemGroup>

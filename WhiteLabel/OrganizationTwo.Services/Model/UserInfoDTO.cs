@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace OrganizationTwo.Services.Model
+﻿namespace OrganizationTwo.Services.Model
 {
-    class UserInfoDTO
+    public class UserInfoDTO
     {
+        public string Name { get; set; }
+        public string AccessKey { get; set; }
     }
 }

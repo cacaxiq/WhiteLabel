@@ -1,5 +1,7 @@
 ﻿using AppBase.Core;
+using AppBase.Services;
 using OrganizationOne.Core.ViewModel;
+using OrganizationOne.Services;
 using Prism;
 using Prism.Ioc;
 using Xamarin.Forms.Xaml;
@@ -17,6 +19,8 @@ namespace OrganizationOne.Core
             base.RegisterTypes(containerRegistry);
 
             containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>("LoginPage");
+
+            containerRegistry.RegisterSingleton<ILoginServiceBase, LoginService>();
         }
     }
 }

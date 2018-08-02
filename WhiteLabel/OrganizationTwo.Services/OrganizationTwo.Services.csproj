@@ -8,4 +8,8 @@
     <PackageReference Include="Refit" Version="4.6.30" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AppBase.Services\AppBase.Services.csproj" />
+  </ItemGroup>
+
 </Project>
