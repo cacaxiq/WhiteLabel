@@ -8,11 +8,15 @@
         <StackLayout VerticalOptions="Center">
             <Image Source="icon.png" />
 
-            <Label Style="{StaticResource LoginStyle}" Text="Login:" />
-            <Entry />
-            <Label Style="{StaticResource SenhaStyle}" Text="Senha:" />
-            <Entry />
-            <Button Text="Login" />
+            <Label Text="Login:" />
+            <Entry Text="{Binding Username}" />
+            <Label Text="Senha:" />
+            <Entry Text="{Binding Password}" />
+            <Button Command="{Binding LoginCommand}" Text="Login" />
+            <Label
+                FontAttributes="Bold"
+                Text="{Binding Message}"
+                TextColor="Red" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

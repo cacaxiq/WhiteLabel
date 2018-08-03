@@ -44,8 +44,10 @@ namespace OrganizationOne.Services
                 };
             }
 
-            var erros = new List<string>();
-            erros.Add("Erro ao realizar login");
+            var erros = new List<string>
+            {
+                "Erro ao realizar login"
+            };
 
             return new CommandResult<IModelBase>
             {

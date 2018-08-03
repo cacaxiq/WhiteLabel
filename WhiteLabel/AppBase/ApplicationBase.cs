@@ -11,9 +11,8 @@ namespace AppBase.Core
 
         protected override void OnInitialized()
         {
-            //NavigationService.NavigateAsync("LoginPage");
-
-            MainPage = new LoginPage();
+            NavigationService.NavigateAsync("LoginPage");
+         
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
