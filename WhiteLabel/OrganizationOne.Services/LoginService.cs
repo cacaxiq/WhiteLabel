@@ -26,9 +26,11 @@ namespace OrganizationOne.Services
 
         public async Task<CommandResult<IModelBase>> ExecuteLogin(string username, string password)
         {
-            var response = await Client().GetUser(username, password);
+            //var response = await Client().GetUser(username, password);
 
             #region Mock
+            AccessToken response;
+
             if (username == "Carlos")
                 response = new AccessToken { Authenticated = true, Token = string.Empty };
             else
