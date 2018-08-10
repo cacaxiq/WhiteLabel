@@ -5,7 +5,7 @@ namespace AppBase.Core.ViewModel
 {
     public abstract class BaseViewModel : BindableBase, INavigationAware
     {
-        private readonly INavigationService navigationService;
+        public readonly INavigationService navigationService;
 
         public BaseViewModel(INavigationService navigationService = null)
         {

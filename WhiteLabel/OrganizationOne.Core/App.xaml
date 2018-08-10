@@ -5,13 +5,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:base="clr-namespace:AppBase.Core;assembly=AppBase.Core">
     <base:ApplicationBase.Resources>
-        <ResourceDictionary>
-            <Style x:Key="LoginStyle" TargetType="Label">
-                <Setter Property="TextColor" Value="Red" />
-            </Style>
-            <Style x:Key="SenhaStyle" TargetType="Label">
-                <Setter Property="TextColor" Value="Red" />
-            </Style>
-        </ResourceDictionary>
+        <ResourceDictionary />
     </base:ApplicationBase.Resources>
 </base:ApplicationBase>
