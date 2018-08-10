@@ -96,7 +96,6 @@
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
-    <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppBase.Droid\AppBase.Droid.csproj">
@@ -111,6 +110,12 @@
       <Project>{176f89b4-0bb3-40c1-a1f4-cca3198eb311}</Project>
       <Name>OrganizationTwo.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Icon.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

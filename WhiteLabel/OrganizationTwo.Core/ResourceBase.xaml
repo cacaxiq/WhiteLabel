@@ -11,4 +11,7 @@
         <Setter Property="TextColor" Value="Blue" />
         <Setter Property="Text" Value="AccessKey:" />
     </Style>
+    <Style x:Key="ImageStyle" TargetType="Image">
+        <Setter Property="Source" Value="Icon.png" />
+    </Style>
 </ResourceDictionary>

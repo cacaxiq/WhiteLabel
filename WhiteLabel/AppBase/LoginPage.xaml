@@ -8,15 +8,13 @@
         <StackLayout VerticalOptions="Center">
             <Image
                 Aspect="AspectFill"
-                HeightRequest="50"
-                Style="{StaticResource ImageStyle}"
-                WidthRequest="50" />
+                Style="{StaticResource ImageStyle}"/>
 
             <Label Style="{StaticResource LoginStyle}" />
             <Entry Text="{Binding Username}" />
             <Label Style="{StaticResource SenhaStyle}" />
             <Entry Text="{Binding Password}" />
-            <Button Command="{Binding LoginCommand}" Image="icon.png" />
+            <Button Command="{Binding LoginCommand}" Image="Icon.png" />
             <Label
                 FontAttributes="Bold"
                 Text="{Binding Message}"

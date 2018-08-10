@@ -77,7 +77,7 @@
     <AndroidResource Include="Resources\values\colors.xml" />
     <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.xml" />
     <AndroidResource Include="Resources\mipmap-anydpi-v26\icon_round.xml" />
-    <AndroidResource Include="Resources\mipmap-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
     <AndroidResource Include="Resources\mipmap-hdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-mdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-mdpi\launcher_foreground.png" />
@@ -88,7 +88,12 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Resources\drawable-xxxhdpi\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppBase.Droid\AppBase.Droid.csproj">
       <Project>{66F1A787-D74F-4E9E-B4B3-3BAFFE9A913B}</Project>
@@ -104,31 +109,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Icon.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icon.png">
+    <AndroidResource Include="Resources\mipmap-hdpi\Icon.png">
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
       <SubType>Designer</SubType>
     </AndroidResource>
