@@ -6,17 +6,13 @@
     Padding="16">
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center">
-            <Image
-                Aspect="AspectFill"
-                HeightRequest="50"
-                Style="{StaticResource ImageStyle}"
-                WidthRequest="50" />
+            <Image Source="icon.png" />
 
-            <Label Style="{StaticResource LoginStyle}" />
+            <Label Text="Login:" />
             <Entry Text="{Binding Username}" />
-            <Label Style="{StaticResource SenhaStyle}" />
+            <Label Text="Senha:" />
             <Entry Text="{Binding Password}" />
-            <Button Command="{Binding LoginCommand}" Image="icon.png" />
+            <Button Command="{Binding LoginCommand}" Text="Login" />
             <Label
                 FontAttributes="Bold"
                 Text="{Binding Message}"

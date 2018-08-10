@@ -14,13 +14,6 @@ namespace OrganizationOne.Core
         public App() { InitializeComponent(); }
         public App(IPlatformInitializer initializer = null) : base(initializer) { }
 
-        protected override void OnInitialized()
-        {
-            Resources.Add(new ResourceBase());
-
-            base.OnInitialized();
-        }
-
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             base.RegisterTypes(containerRegistry);

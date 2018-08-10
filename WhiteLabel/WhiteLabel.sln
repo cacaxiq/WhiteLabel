@@ -5,17 +5,17 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{ABBF996A-B0A1-470F-822D-4774DADE3B29}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Native", "Native", "{344033E5-740F-4B2E-A29A-479C7F31A0D4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{344033E5-740F-4B2E-A29A-479C7F31A0D4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{9D7A2D7E-7308-4486-A656-D8DEFD0C7A07}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Native", "Native", "{9D7A2D7E-7308-4486-A656-D8DEFD0C7A07}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrganizationOne", "OrganizationOne", "{C941EEC3-0FB8-4400-B725-7079A088B70F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppBase.Core", "AppBase\AppBase.Core.csproj", "{BF261960-5B97-4711-BEFC-0058C9B87064}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{B38D06F1-3B94-4656-B23B-85AD82633BA7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Native", "Native", "{B38D06F1-3B94-4656-B23B-85AD82633BA7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Native", "Native", "{95621468-0DC0-4DDC-9F09-9CEF1EAF29CB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{95621468-0DC0-4DDC-9F09-9CEF1EAF29CB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppBase.iOS", "AppBase.iOS\AppBase.iOS.csproj", "{E71F3053-056C-4381-9638-048ED73BDFF6}"
 EndProject
@@ -29,9 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrganizationOne.Core", "Org
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrganizationTwo", "OrganizationTwo", "{9EE34451-215D-413B-B75E-0F8E6BE51F58}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{430D14A1-2719-4828-BF6B-5D6358A87853}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Native", "Native", "{430D14A1-2719-4828-BF6B-5D6358A87853}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Native", "Native", "{BCF99E4E-E146-4585-AF78-D4FB246252D8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{BCF99E4E-E146-4585-AF78-D4FB246252D8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrganizationTwo.Core", "OrganizationTwo.Core\OrganizationTwo.Core.csproj", "{176F89B4-0BB3-40C1-A1F4-CCA3198EB311}"
 EndProject
@@ -45,11 +45,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{D1
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{8CDF15D5-EF01-4D57-A253-A8C4009E3D8B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppBase.Services", "AppBase.Services\AppBase.Services.csproj", "{429D0BBA-F09E-4F2E-8F1F-0FEEF98E8BBF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppBase.Services", "AppBase.Services\AppBase.Services.csproj", "{429D0BBA-F09E-4F2E-8F1F-0FEEF98E8BBF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrganizationOne.Services", "OrganizationOne.Services\OrganizationOne.Services.csproj", "{364D17AC-6E64-46B0-B9CA-A82689CBEDFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganizationOne.Services", "OrganizationOne.Services\OrganizationOne.Services.csproj", "{364D17AC-6E64-46B0-B9CA-A82689CBEDFA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrganizationTwo.Services", "OrganizationTwo.Services\OrganizationTwo.Services.csproj", "{60DC1A7E-C205-4BA9-A68D-6019D981FEB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganizationTwo.Services", "OrganizationTwo.Services\OrganizationTwo.Services.csproj", "{60DC1A7E-C205-4BA9-A68D-6019D981FEB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

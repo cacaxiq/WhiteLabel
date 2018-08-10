@@ -28,11 +28,9 @@ namespace OrganizationTwo.Services
         {
             var request = new UserInfoDTO { Name = username, AccessKey = password };
 
-            //var response = await Client().GetUser(request);
+            var response = await Client().GetUser(request);
 
             #region Mock
-            User response;
-
             if (username == "Carlos")
                 response = new User { Authenticated = true, Id = new System.Guid(), UserName = username };
             else

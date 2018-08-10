@@ -46,15 +46,13 @@ namespace OrganizationOne.Core.ViewModel
             var response = await loginService.ExecuteLogin(Username, Password);
             var access = response.Data as AccessToken;
 
-            if (!response.Success)
+            if (!access.Authenticated)
                 Message = "Erro no login!!";
-            else
-                await navigationService.NavigateAsync("MainPage");
         }
 
         bool CanExecuteLoginCommand()
         {
-            return true;
+            return !string.IsNullOrEmpty(Username) || !string.IsNullOrEmpty(Password);
         }
         #endregion
 

@@ -1,7 +1,6 @@
 ﻿using Prism;
 using Prism.Ioc;
 using Prism.Unity;
-using Xamarin.Forms;
 
 namespace AppBase.Core
 {
@@ -13,6 +12,7 @@ namespace AppBase.Core
         protected override void OnInitialized()
         {
             NavigationService.NavigateAsync("LoginPage");
+         
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
